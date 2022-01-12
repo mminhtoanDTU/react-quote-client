@@ -1,0 +1,44 @@
+.input__group {
+    margin-bottom: 24px;
+    position: relative;
+
+    & .label {
+        color: var(--text-gray);
+        font-weight: 500;
+        font-size: var(--fs-md);
+        display: inline-block;
+        padding-bottom: 8px;
+    }
+
+    & .input {
+        width: 100%;
+        outline: none;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+
+        font-size: var(--fs-md);
+        line-height: 1.5;
+        padding: 7px;
+        margin-bottom: 3px;
+        transition: all 0.2s ease-in;
+
+        &::placeholder {
+            color: #aaa;
+        }
+
+        &:focus {
+            border-color: var(--main-color);
+        }
+
+        &.error {
+            border-color: #ff4d4f;
+        }
+    }
+
+    & .message {
+        color: #ff4d4f;
+        font-size: var(--fs-sm);
+        line-height: 1.5;
+        position: absolute;
+    }
+}

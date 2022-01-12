@@ -1,0 +1,39 @@
+.main {
+    padding-top: var(--header-height);
+    background-color: #FAFAFA;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 30px;
+    min-height: 80vh;
+    padding-top: 30px;
+}
+
+.content {
+    width: 100%;
+    //min-width: 615px;
+
+    &__nothing {
+        text-align: center;
+        font-size: var(--fs-lg);
+        color: var(--text-gray);
+    }
+
+    &__list {
+        margin-top: 25px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .main-container {
+        flex-direction: column-reverse;
+        gap: 25px 0;
+    }
+
+    .main-container.profile-container {
+        flex-direction: column;
+    }
+}
